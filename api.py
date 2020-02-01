@@ -4,6 +4,7 @@ import datetime
 
 
 
+
 # ---------------------------------#
 def get_routes(agency_id):
     url = "https://transloc-api-1-2.p.rapidapi.com/routes.json"
@@ -126,12 +127,12 @@ def passenger_load_list(route_id_list,agency_id,route_name_list):
             passenger_load_list.append(passenger_load)
         time.sleep(rate_limit*1.1)  # Limit API requests to the rate_limit times 1.1
 
-    print("passenger_load_list",passenger_load_list)
+    # print("passenger_load_list",passenger_load_list)
     return passenger_load_list
 
 # -----------------------------------------------------------------------------#
 # Return the current date and time
-def get_datetime():
+def get_current_datetime():
     dt = datetime.datetime.today()
     day = dt.day
     mon = dt.month
@@ -139,4 +140,6 @@ def get_datetime():
     hr = dt.hour
     min = dt.minute
     sec = dt.second
-    return day, mon, yr, hr, min, sec
+    today_datetime = [day, mon, yr, hr, min, sec]
+    # today_datetime.extend((day, mon, yr, hr, min, sec))
+    return today_datetime
