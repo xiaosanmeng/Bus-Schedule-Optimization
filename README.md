@@ -43,7 +43,26 @@ According to the US Department of Transportation, bus transit emits 0.64 lbs of 
 
 **Note**: Passenger miles = vehicle miles x average number of passengers on vehicle. Normalizing by passenger miles allows for comparison between vehicles carrying different numbers of passengers
 
-   
+# Code
+##  Prerequisites
+You can install the necessary dependencies by running the requirements.txt file.
+ - Python 3x
+ - Numpy
+ - Pandas
+ - Matplotlib
+ - Seaborn
+ - Requests
+
+## Transloc API
+The Transloc API provides API calls that can be used to retrieve a list of Agencies. Using an Agency ID, we can get a list of routes for a particular agency. We can also get location, arrival time, compass and passenger occupancy data for buses operating on a particular route. More information can be found on the Transloc API website.
+
+We use the Requests library to make API requests and retrieve the passenger occupancy data. The code factors in the API request rate limit and ensure that it does not exceed the limit.
+
+## Storing the Data
+The sampled passenger occupancy data for each bus is stored in a new line within a CSV file alongwith the current timestamp using the CSV library.
+
+## Data Visulization
+A Pandas dataframe is created for each bus route (CSV columns) and the heatmaps and thresolding graphs were created using the Seaborn and Matplotlib heatmap functionality.   
 
 
 # References
