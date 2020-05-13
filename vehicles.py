@@ -7,6 +7,7 @@ import requests
 url = "https://transloc-api-1-2.p.rapidapi.com/vehicles.json"
 
 # Province Route ID: 4013312 ; RIT Agency ID: 643
+# querystring = {"routes":"4013312","callback":"call","agencies":"643"}
 querystring = {"routes":"4013312","callback":"call","agencies":"643"}
 
 headers = {
