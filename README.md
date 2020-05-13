@@ -1,4 +1,4 @@
-![Banner](https://github.com/jonathanrjpereira/Transloc-Bus-Tracking/blob/master/img/banner.svg)
+![Banner](https://github.com/jonathanrjpereira/Bus-Schedule-Optimization/blob/master/img/banner.png)
 
 The projects aims to optimize bus schedules in order lower costs and reduce carbon emissions using passenger occupancy data collected via the Transloc API.
 
